@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+	   var p = new Promise((resolve,reject)=>{
+			$.ajax({
+			   url:'animate.html',
+			   dataType:'text',
+			   success:function(data){
+					resolve(data)
+			   },error:function(err){
+			      reject(err)
+			   }
+			})	   
+	   })
+
+	   p.then((data)=>{
+	      console.log('成功了',data)
+	   },(err)=>{
+			console.log('错误',err)
+	   })
+
+
+//	    function createXhr(url){
+	    var createXhr = function (url){
+	      return new Promise((resolve,reject)=>{
+		     $.ajax({
+			    url,
+				success:function(data){
+					resolve(data)
+				},
+				error:function(err){
+				   reject(err)
+				}
+			 })
+		  })
+	   }
+	   createXhr('animate.html').then((data)=>{
+	      console.log(data)
+	   });
+
+	   Promise.all([
+	      createXhr('animate.html'),
+	      createXhr('promise.html'),
+	   ]).then((data)=>{
+		   let [result1,result2] = data
+	      console.log(result1,result2)
+	   },(err)=>{
+	      console.log('没有全部成功',err)
+	   })
+	</script>
+</body>
+</html>

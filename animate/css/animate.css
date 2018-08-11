@@ -1,0 +1,66 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+.date_container{
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 0 auto;
+}
+.date{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 150PX;
+    left: -100PX;
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+}
+.month{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 50PX;
+    left: 50PX;
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+}
+
+.year{
+    width: 300px;
+    height:300px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 50PX;
+    left: 50PX;
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+}
+
+.ok{
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(90deg, #F69B9C, #F78A95);
+    border-radius: 50%;
+    position: relative;
+    top: 50PX;
+    left: 50PX;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+p{
+    position: relative;
+    top: 40px;
+    color: #ddd;
+    font-size: 12px;
+}
