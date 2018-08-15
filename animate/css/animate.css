@@ -3,64 +3,187 @@ p{
     padding: 0;
 }
 .date_container{
-    overflow: hidden;
-    width: 300px;
-    height: 400px;
+    transform: scale(0.7);
+    overflow: hidden; 
+    width: 602px;
+    height: 820px;
     border: 1px solid #ddd;
     position: relative;
-    margin: 0 auto;
+    margin: -220px auto 0;
+}
+.hide{
+     display: none;
+}
+.box{
+    transition: all 1s;
 }
 .date{
-    width: 500px;
-    height: 500px;
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
-    top: 150PX;
+    top: 450PX;
     left: -100PX;
     box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
 }
+.date_anima{
+    width: 800px;
+    height: 800px;
+}
 .month{
-    width: 400px;
-    height: 400px;
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
-    top: 50PX;
-    left: 50PX;
+    top: -250PX;
+    left: 0PX;
     box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
 }
-
+.month_anima{
+    width: 600px;
+    height: 600px;
+}
 .year{
-    width: 300px;
-    height:300px;
+    transition: all 0.5s;
+    overflow: hidden;
+    width: 0px;
+    height:0px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
-    top: 50PX;
-    left: 50PX;
+    top: -750PX;
+    left: 100PX;
     box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+}
+.year_anima{
+    width: 400px;
+    height:400px;
 }
 
 .ok{
-    width: 200px;
-    height: 200px;
+    width: 0px;
+    height: 0px;
+    transition: all 0.5s;
     background:linear-gradient(90deg, #F69B9C, #F78A95);
     border-radius: 50%;
     position: relative;
-    top: 50PX;
-    left: 50PX;
+    top: -1050PX;
+    left: 200PX;
     text-align: center;
-    line-height: 60px;
+    line-height: 90px;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
 }
-p{
-    position: relative;
-    top: 40px;
+.ok_anima{
+    width: 200px;
+    height: 200px;
+}
+p.month_text,p.date_text,p.year_text{
+    position: absolute;
+    left: 290px;
     color: #ddd;
     font-size: 12px;
+}
+p.month_text{
+    top: 600px;
+    left: 280px;
+}
+p.year_text{
+    top: 700px;
+    left: 290px;
+}
+p.date_text{
+    top: 500px;
+    left: 285px;
+}
+.date span{
+    position:absolute;
+    font-size:.5em; text-align:center;
+    color: #666;
+    width:7px; height:5px;
+	top:20px; left: 390px;
+    transform-origin:14px 380px;
+    cursor: pointer;
+}
+.month span{
+    position:absolute;
+    font-size:.5em; text-align:center;
+    color: #666;
+    width:7px; height:5px;
+	top:20px; left: 290px;
+	transform-origin:12px 280px;
+    cursor: pointer;
+}
+.year span{
+    position:absolute;
+    font-size:.5em; text-align:center;
+    color: #666;
+    width:7px; height:5px;
+	top:20px; left: 185px;
+	transform-origin:12px 180px;;
+    cursor: pointer;
+}
+.year1,.month1{transform: rotate(-69deg)}
+.year2,.month2{transform: rotate(314deg)}
+.year3,.month3{transform: rotate(337deg)}
+.year4,.month4{transform: rotate(360deg)}
+.year5,.month5{transform: rotate(23deg)}
+.year6,.month6{transform: rotate(46deg)}
+.year7,.month7{transform: rotate(69deg)}
+.month8{transform: rotate(92deg)}
+.month9{transform: rotate(115deg)}
+.month10{transform: rotate(138deg)}
+.month11{transform: rotate(161deg)}
+.month12{transform: rotate(184deg)}
+.date1{transform: rotate(312deg)}
+.date2{transform: rotate(324deg)}
+.date3{transform: rotate(336deg)}
+.date4{transform: rotate(348deg)}
+.date5{transform: rotate(360deg)}
+.date6{transform: rotate(12deg)}
+.date7{transform: rotate(24deg)}
+.date8{transform: rotate(36deg)}
+.date9{transform: rotate(48deg)}
+span.active{
+    color:#000;
+    font-weight: bold;
+    font-size: 18px;
+    /* transform: translateX(-10px) */
+}
+.ball{
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 50%;
+    position: relative;
+    left: 340px;
+    top: -180px;
+}
+.ball_animation{
+    animation: jump 1s;
+}
+
+@keyframes jump{
+    0%{
+        top: -160px;
+        transform: scale(1)
+    }
+    50%{
+        top:-200px;
+        transform: scale(1.1)
+    }
+    100%{
+        top: -180px;
+        transform: scale(1)
+    }
 }
