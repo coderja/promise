@@ -106,17 +106,14 @@ p.date_text{
     top: 500px;
     left: 285px;
 }
-<<<<<<< HEAD
 .date_span{
-=======
-.date span{
->>>>>>> 3468f8aca62fad546f22fcf68a1b4d0c12310c17
     position:absolute;
     font-size:.5em; text-align:center;
     color: #666;
     width:7px; height:5px;
-	top:20px; left: 390px;
-    transform-origin:14px 380px;
+	top: 0px;
+    left: 386px;
+    transform-origin: 14px 399px;
     cursor: pointer;
 }
 .month span{
@@ -144,6 +141,7 @@ p.date_text{
 .year5,.month5{transform: rotate(23deg)}
 .year6,.month6{transform: rotate(46deg)}
 .year7,.month7{transform: rotate(69deg)}
+.year8{transform: rotate(92deg)}
 .month8{transform: rotate(92deg)}
 .month9{transform: rotate(115deg)}
 .month10{transform: rotate(138deg)}

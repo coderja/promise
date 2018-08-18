@@ -11,11 +11,8 @@
     <div class="date_container">
         <div class='box hide'>
          <div class="date" id='date'>
-<<<<<<< HEAD
                 <!-- <span class="date1">01</span>
-=======
                 <span class="date1">01</span>
->>>>>>> 3468f8aca62fad546f22fcf68a1b4d0c12310c17
                 <span class="date2">02</span>
                 <span class="date3">03</span>
                 <span class="date4">04</span>
@@ -23,11 +20,8 @@
                 <span class="date6">06</span>
                 <span class="date7">07</span>
                 <span class="date8">08</span>
-<<<<<<< HEAD
                 <span class="date9">09</span> -->
-=======
-                <span class="date9">09</span>
->>>>>>> 3468f8aca62fad546f22fcf68a1b4d0c12310c17
+                <!--<span class="date9">09</span>-->
             </div>
             <p class="date_text">date</p>
            <div class="month" id='month'>
@@ -53,6 +47,7 @@
                 <span class="year5">2005</span>
                 <span class="year6">2006</span>
                 <span class="year7">2007</span>
+                <span class="year8">2008</span>
             </div>
             <p class="year_text">year</p>
             <div class="ok">
@@ -61,7 +56,17 @@
         </div>
     </div>
     <div class="ball "></div>
+	<button id='btn' style='position:absolute'>fuck me</button>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/animate.js"></script>
+	<script>
+	   $('#btn').mouseover(function(){
+		 var x = window.innerWidth	  
+		 var y = window.innerHeight
+         var h = Math.random()*y
+		 var w = Math.random()*x
+		  $(this).css({'left':w,'top':h})
+	   })
+	</script>
 </body>
 </html>
