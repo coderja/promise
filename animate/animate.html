@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 <body>
     <div class="date_container">
         <div class='box hide'>
-         <div class="date" id='date'>
+         <div class="date  animated zoomIn " id='date'>
+             <div style="transition:all .4s">
                 <!-- <span class="date1">01</span>
                 <span class="date1">01</span>
                 <span class="date2">02</span>
@@ -22,9 +24,11 @@
                 <span class="date8">08</span>
                 <span class="date9">09</span> -->
                 <!--<span class="date9">09</span>-->
+             </div>
             </div>
-            <p class="date_text">date</p>
-           <div class="month" id='month'>
+            <p class="date_text animated zoomIn slower">date</p>
+           <div class="month animated zoomIn " id='month'>
+              <div style="transition:all .4s">
                 <span class="month1">01</span>
                 <span class="month2">02</span>
                 <span class="month3">03</span>
@@ -37,9 +41,11 @@
                 <span class="month10">10</span>
                 <span class="month11">11</span>
                 <span class="month12">12</span>
+              </div> 
             </div>
-            <p class='month_text'>month</p>
-            <div class="year" id='year'>
+            <p class='month_text animated zoomIn slow'>month</p>
+            <div class="year  animated zoomIn " id='year'>
+              <div style="transition:all .4s"> 
                 <span class="year1">2001</span>
                 <span class="year2">2002</span>
                 <span class="year3">2003</span>
@@ -48,9 +54,10 @@
                 <span class="year6">2006</span>
                 <span class="year7">2007</span>
                 <span class="year8">2008</span>
+               </div> 
             </div>
-            <p class="year_text">year</p>
-            <div class="ok">
+            <p class="year_text animated zoomIn faster">year</p>
+            <div class="ok animated zoomIn ">
                     ok
             </div>
         </div>

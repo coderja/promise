@@ -21,51 +21,54 @@ p{
     transition: all 1s;
 }
 .date{
-    transition: all 0.5s;
     overflow: hidden;
-    width: 0px;
-    height: 0px;
+    width: 800px;
+    height: 800px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
     top: 450PX;
     left: -100PX;
-    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1);
+    animation-duration: 0.8s !important;
+    animation-delay: .3s;
 }
 .date_anima{
     width: 800px;
     height: 800px;
 }
 .month{
-    transition: all 0.5s;
     overflow: hidden;
-    width: 0px;
-    height: 0px;
+    width: 600px;
+    height: 600px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
     top: -250PX;
     left: 0PX;
-    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1);
+    animation-duration: 0.6s !important;
+    animation-delay: .3s;
 }
 .month_anima{
     width: 600px;
     height: 600px;
 }
 .year{
-    transition: all 0.5s;
     overflow: hidden;
-    width: 0px;
-    height:0px;
+    width: 400px;
+    height:400px;
     text-align: center;
     background: #fff;
     border-radius: 50%;
     position: relative;
     top: -750PX;
     left: 100PX;
-    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1)
+    box-shadow: 4px -4px 13px 1px rgba(0,0,0,0.1);
+    animation-duration: 0.4s !important;
+    animation-delay: .3s;
 }
 .year_anima{
     width: 400px;
@@ -73,12 +76,14 @@ p{
 }
 
 .ok{
-    width: 0px;
-    height: 0px;
-    transition: all 0.5s;
+    width: 200px;
+    height: 200px;
+    animation-duration: 0.2s !important;
+    animation-delay: .3s;
     background:linear-gradient(90deg, #F69B9C, #F78A95);
     border-radius: 50%;
     position: relative;
+   
     top: -1050PX;
     left: 200PX;
     text-align: center;
@@ -100,14 +105,20 @@ p.month_text,p.date_text,p.year_text{
 p.month_text{
     top: 600px;
     left: 280px;
+    animation-duration: 1.1s !important;
+    animation-delay: .3s;
 }
 p.year_text{
     top: 700px;
     left: 290px;
+    animation-duration: 0.8s !important;
+    animation-delay: .3s;
 }
 p.date_text{
     top: 500px;
     left: 285px;
+    animation-duration: 0.5s !important;
+    animation-delay: .3s;
 }
 .date_span{
     position:absolute;
@@ -194,3 +205,5 @@ span.active{
         transform: scale(1)
     }
 }
+
+ 
