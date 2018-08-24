@@ -153,20 +153,20 @@ $(function(){
     $('.ok').on('click',function(e) {
         $('.box').addClass('hide')
         $('.ball').addClass('ball_animation').show()
-        $('#year').removeClass('year_anima')
-        $('#month').removeClass('month_anima')
-        $('#date').removeClass('date_anima')
-        $(this).removeClass('ok_anima')
+        $('#year').parent().removeClass('animated zoomIn')
+        $('#month').parent().removeClass('animated zoomIn')
+        $('#date').parent().removeClass('animated zoomIn')
+        $(this).removeClass('animated zoomIn')
     })
 
     // 点击小球事件
     $('.ball').on('click',function(e) {
         $('.box').removeClass('hide')
         $(this).removeClass('ball_animation').hide();
-        $('#year').addClass('year_anima')
-        $('#month').addClass('month_anima')
-        $('#date').addClass('date_anima')
-        $('.ok').addClass('ok_anima')
+        $('#year').parent().addClass('animated zoomIn')
+        $('#month').parent().addClass('animated zoomIn')
+        $('#date').parent().addClass('animated zoomIn')
+        $('.ok').addClass('animated zoomIn')
     })
     
 })
