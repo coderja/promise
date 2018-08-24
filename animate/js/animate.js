@@ -35,7 +35,7 @@ function getmatrix(a,b,c,d){
     //return (aa+','+bb+','+cc+','+dd); 
 }
 
-$(()=>{
+$(function(){
     var currentYear=2004,currentMonth=04,currentDate=01,currentYearDeg=0,currentMonthDeg=0,currentDateDeg=0;
     // 旋转方法
     function rotate(elem,$target) {
@@ -64,7 +64,7 @@ $(()=>{
                 $elem.css({'transform':'rotate('+(0-nowDeg)+'deg)'});
                 console.log(nowDeg-360)
             }else if(nowDeg>270&&nowDeg<360) {
-                $elem.css({'transform':'rotate('+(0-nowDeg)+'deg)'});
+                $elem.css({'transform':'rotate('+(360-nowDeg)+'deg)'});
             }else {
                 $elem.css({'transform':'rotate('+(0)+'deg)'});
             }
