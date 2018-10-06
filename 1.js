@@ -9,4 +9,4 @@ new Promise(resolve=>{
 }).then((value)=>{
         console.log(value+' world')
 })
-console.log('1')
+console.log('git学习')
